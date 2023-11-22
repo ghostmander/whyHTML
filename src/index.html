@@ -7,6 +7,7 @@
 
     <title>WHY HTML??</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="js/main.js" defer></script>
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -49,17 +50,5 @@
     </div>
     <div class="block bottom-0 z-50 bg-white" style="min-height: 200vh;">uwu</div>
     </p>
-    <script>
-      var currSlide = 1
-      window.onscroll =(() => {
-        const y = window.scrollY
-        // console.log(y)
-        // console.log($(`#slide-${currSlide}`))
-        if (y > 900 && currSlide !== 5) {
-          $(`#slide-${currSlide}`).fadeOut()
-          $(`#slide-${++currSlide}`).fadeIn()
-          window.scrollTo(0, 0)
-      }})
-    </script>
   </body>
 </html>
